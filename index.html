@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/icon" href="https://i1.wp.com/anitrendz.net/news/wp-content/uploads/2020/04/Hanako-AOTS.jpg?resize=700%2C476">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul class="main-nav">
+                    <li class="home"><a href="#">Home</a></li>
+                    <li><a href="#">Ongoing</a></li>
+                    <li><a href="#">Completed</a></li>
+                </ul>
+                <div class="dropdown">
+                    <ul>
+                        <li>Apple</li>
+                        <li>Orange</li>
+                        <li>Mango</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Download Anime.<br>Get latest and updated anime from our site to watch</h1>
+            <a id='signup' class="btn signup" href="#" >Sign up</a>
+            <a class="btn searchanime" href="#">Search Anime</a>
+        </div>
+        <div class="sign-up-form">
+            <div class="form-inner">
+                <div class='close-form'>X</div>
+                <h1>Sign Up Now</h1>
+                <form>
+                    <input type="email" class="input-box" placeholder="Enter Your Email">
+                    <input type="password" class="input-box" placeholder="Enter Your Password">
+                    <p><span><input type="checkbox"></span>I agree to terms and condition.</p>
+                    <button type="button" class="sign-btn">Sign up</button>
+                    <hr>
+                    <p class="or">OR</p>
+                    <button type="button" class="sign-btn">Login with Google</button>
+        
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="outer-section clear-fix">
+        <div class="inner-div"></div>
+        <div class="inner-div"></div>
+        <div class="inner-div"></div>
+        <div class="inner-div"></div>
+  
+    </section>
+    <script type="text/javascript">
+    	var signup = document.getElementById('signup');
+        signup.addEventListener('click',()=>{
+document.querySelector('.sign-up-form').classList.add('active');            
+        })
+
+        document.querySelector('.form-inner').addEventListener('click',(e)=>{
+            e.stopPropagation();
+        })
+
+        var close_signup = document.querySelector('.close-form');
+        close_signup.addEventListener('click',()=>{
+            document.querySelector('.sign-up-form').classList.remove('active');            
+        })    
+        // document.querySelector('.home').addEventListener('mouseover',(e)=>{
+        //     document.querySelector('.dropdown').classList.add('display-dropdown');            
+        // })  
+        // document.querySelector('.home').addEventListener('click',(e)=>{
+        //     document.querySelector('.dropdown').classList.remove('display-dropdown');            
+        // })  
+
+    </script>
+</body>
+</html>

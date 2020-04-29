@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+    position: relative;
+}
+body::-webkit-scrollbar-track{
+    background-color: #b8772b;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: pink;
+    box-shadow: 0px 0px 4px black inset;
+    position: absolute;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0,50, 0.712), rgba(0,100, 0, 0.712)), url(resources/background2.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box h1 {
+    text-align: left;
+    padding-top: 200px;
+}
+
+.hero-text-box {
+    position: absoulte;
+    width: 1140px;
+    height: 640px;
+    text-align: center;
+    word-spacing: 3px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    border-radius: 500px;
+    padding: 10px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    
+
+}
+
+.signup:link,
+.signup:link:visited {
+    background-color: orangered;
+    float: left;
+    transition: background-color 0.5s;
+}   
+
+.searchanime:link,
+.searchanime:visited {
+    border: 1px solid orangered;
+    margin-right: 850px;
+    transition: background-color 0.5s;
+}
+
+.signup:link:hover,
+.signup:active {
+    background-color: rgba(224, 77, 24, 0.856);
+}
+
+.searchanime:hover,
+.searchanime:active {
+    background-color: rgba(221, 76, 23, 0.842);
+    font-family: serif;
+}
+
+.main-nav {
+    float: right;
+    list-style-type: none;
+    margin-top: 60px;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    border-radius: 200px;
+    color: papayawhip;
+    border-bottom: 2px solid transparent;
+} 
+
+.main-nav li a:hover,
+.main-nav li:active {
+    padding-bottom: 3px;
+    border-bottom: 2px solid orangered
+}
+
+figure img {
+    width: 800px;
+    height: 600px;
+}
+
+.dropdown{
+    background-color: pink;
+    padding: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 88px;
+    right: 309px;
+    display: none;
+}
+.dropdown ul li{
+    display:block;
+}
+
+.display-dropdown{
+    display: inline-block;
+}
+.outer-section{
+    background-color: red;
+    padding: 20px 50px;
+    overflow: hidden;
+    width: 75%;
+    margin:0 auto;
+}
+.clear-fix{
+    content: '';
+    display: table;
+    clear: both;
+}
+.inner-div{
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    background-color:yellow;
+    float: right;
+}
